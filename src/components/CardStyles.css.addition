@@ -1,0 +1,8 @@
+.card-container:not(.card-flipped):hover .card-front img {
+  transform: scale(1.08);
+  transition: transform 0.7s ease-in-out;
+}
+
+.card-front img {
+  transition: transform 0.7s ease-in-out;
+}

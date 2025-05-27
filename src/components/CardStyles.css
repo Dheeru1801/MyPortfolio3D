@@ -1,0 +1,89 @@
+/* Custom card flip styles */
+.card-container {
+  perspective: 1000px;
+  margin: 0 auto;
+  display: block;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out, box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 1rem;
+}
+
+.card-flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, 
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card-hover-effect {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-container:not(.card-flipped):hover .card-hover-effect {
+  transform: scale(1.08) translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(79, 70, 229, 0.4);
+  z-index: 10;
+}
+
+/* Info button */
+.info-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.info-button:hover {
+  transform: scale(1.15) rotate(360deg);
+  box-shadow: 0 0 12px rgba(79, 70, 229, 0.5);
+}
+
+.info-button:active {
+  transform: scale(0.95);
+}
+
+.card-container:hover .info-button {  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+.card-container:not(.card-flipped):hover .card-front img {
+  transform: scale(1.08);
+  transition: transform 0.7s ease-in-out;
+}
+
+.card-front img {
+  transition: transform 0.7s ease-in-out;
+}
