@@ -1,15 +1,8 @@
-<div align="cente## <a name="table">Table of Contents</a>
-
-1.  🤖 [Introduction](#introduction)
-2.  ⚙️ [Tech Stack](#tech-stack)
-3.  🔋 [Features](#features)
-4.  🌟 [Recent Enhancements](#enhancements)
-5.  🤸 [Quick Start](#quick-start)
-6.  🕸️ [Snippets](#snippets)
-7.  🔗 [Links](#links)
-8.  🚀 [More](#more) />
-        <img src="https://canada1.discourse-cdn.com/flex035/uploads/threejs/original/3X/e/e/eedecc99d147bf389a399351501214bb5264ad42.jpegL" alt="Project Banner">
-    <br />
+<div align="center">
+  <br />
+    
+  <img src="./src/assets/newHerobg.webp" alt="Project Banner" width="800px">
+  <br />
 
   <div>
     <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
@@ -26,10 +19,11 @@
 1. 🤖 [Introduction](#introduction)
 2. ⚙️ [Tech Stack](#tech-stack)
 3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Snippets](#snippets)
-6. 🔗 [Links](#links)
-7. 🚀 [More](#more)
+4. 🌟 [Recent Enhancements](#enhancements)
+5. 🤸 [Quick Start](#quick-start)
+6. 🕸️ [Snippets](#snippets)
+7. 🔗 [Links](#links)
+8. 🚀 [More](#more)
 
 ## <a name="introduction">🤖 Introduction</a>
 
