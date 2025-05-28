@@ -41,9 +41,9 @@ const ResumeAvatar = () => {
             alt="Avatar" 
             className="avatar-image transition-all duration-300 hover:scale-110 relative z-10"
             style={{ 
-              width: '70px',
-              height: '70px',
-              borderRadius: '50%',
+              width: '80px',
+              height: '80px',
+              borderRadius: '60%',
               objectFit: 'cover',
               objectPosition: '0 -5px', // Adjust vertical position to show the face better
               border: '2px solid #915eff',
@@ -60,9 +60,9 @@ const ResumeAvatar = () => {
           style={{
             transform: hovered ? 'scale(1.05)' : 'scale(1)',
             transition: 'transform 0.3s ease',
-            fontSize: '0.9rem',
+            fontSize: '0.7rem',
             padding: '0.35rem 0.7rem',
-            letterSpacing: '0.02em'
+            letterSpacing: '0.04em'
           }}
         >
           <span>My Resume</span>
