@@ -1,7 +1,12 @@
 <div align="center">
   <br />
-    ![alt text](image.png)
-  <!-- <img src="./src/assets/newHerobg.webp" alt="Project Banner" width="800px"> -->
+  <!-- Main image with responsive design -->
+  <img 
+    src="./image.png" 
+    alt="3D Portfolio Preview" 
+    width="800px" 
+    style="max-width: 100%; border-radius: 8px; box-shadow: 0px 8px 24px rgba(0,0,0,0.2);" 
+  />
   <br />
 
   <div>
