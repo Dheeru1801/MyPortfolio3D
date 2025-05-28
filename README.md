@@ -1,7 +1,7 @@
 <div align="center">
   <br />
     
-      <img src="https://github.com/adrianhajdin/project_3D_developer_portfolio/assets/151519281/4722160a-8e61-403f-a905-728feae1f7e6" alt="Project Banner">
+      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fdiscourse.threejs.org%2Ft%2Fmy-new-personal-portfolio-website%2F72310&psig=AOvVaw15zsCP82UXv0STxbR8r7xs&ust=1748528131889000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMjg-YStxo0DFQAAAAAdAAAAABAL" alt="Project Banner">
   <br />
 
   <div>
