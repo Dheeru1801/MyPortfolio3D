@@ -6,6 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import avatar from "./avatar.png";
 import gsap from './tech/gsap.png'
 import framer from './tech/framer.png';
 import css from "./tech/css.png";
@@ -47,6 +48,7 @@ export {
   github,
   menu,
   close,
+  avatar,
   css,
   project1,
   project2,

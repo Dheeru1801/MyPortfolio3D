@@ -1,13 +1,11 @@
-import React, { useRef, useState, useEffect, Suspense } from "react";
-import { useFrame, useThree } from "@react-three/fiber";
-import { useGLTF, Html, Preload, Sphere, MeshDistortMaterial } from "@react-three/drei";
-import * as THREE from "three";
-import { gsap } from "gsap";
+import React, { useRef, useState, useEffect } from "react";
+import { useFrame } from "@react-three/fiber";
+import { Html } from "@react-three/drei";
+import { avatar } from "../../assets";
 
 const ResumeAvatar = ({ isMobile }) => {
-  // Use a simple sphere with distortion effect instead of the desktop PC model
+  const groupRef = useRef();
   const bannerRef = useRef();
-  const sphereRef = useRef();
   const [hovered, setHovered] = useState(false);
   
   // Animation for hover effect
@@ -29,26 +27,29 @@ const ResumeAvatar = ({ isMobile }) => {
         });
       }
     }
-  }, [hovered]);
-  // Gentle floating and rotation animation
+  }, [hovered]);  // Gentle floating animation
   useFrame((state) => {
-    if (sphereRef.current) {
-      sphereRef.current.rotation.y += 0.01;
-      sphereRef.current.position.y = Math.sin(state.clock.elapsedTime * 0.5) * 0.1;
+    if (groupRef.current) {
+      groupRef.current.position.y = Math.sin(state.clock.elapsedTime * 0.5) * 0.1;
     }
   });
 
   return (
-    <group ref={sphereRef} position={[0, 0, 0]}>
-      <Sphere args={[1, 64, 64]} scale={isMobile ? 0.6 : 0.8}>
-        <MeshDistortMaterial 
-          color="#8257e5" 
-          attach="material" 
-          distort={0.4} 
-          speed={1.5} 
-          roughness={0.2}
+    <group ref={groupRef} position={[0, 0, 0]}>
+      <Html transform distanceFactor={1.5} position={[0, 0, 0]} className="avatar-image-container">
+        <img 
+          src={avatar} 
+          alt="Avatar" 
+          className="avatar-image"
+          style={{ 
+            width: isMobile ? '60px' : '80px',
+            height: isMobile ? '60px' : '80px',
+            borderRadius: '50%',
+            objectFit: 'cover',
+            border: '2px solid #915eff'
+          }} 
         />
-      </Sphere>      <group 
+      </Html><group 
         ref={bannerRef} 
         position={[0, 1.5, 0]}
         onPointerOver={() => setHovered(true)}

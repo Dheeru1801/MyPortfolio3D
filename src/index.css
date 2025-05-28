@@ -260,31 +260,53 @@ h1, h2, h3, h4, h5, h6 {
   top: 5rem;
   right: 2rem;
   z-index: 100;
-  width: 120px;
-  height: 120px;
   pointer-events: all;
 }
 
 @media (max-width: 768px) {
   .resume-avatar-container {
-    width: 80px;
-    height: 80px;
     top: 4rem;
     right: 1rem;
+  }
+  
+  .resume-avatar-container .avatar-image {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  
+  .resume-avatar-container .banner-container {
+    font-size: 0.7rem !important;
+    padding: 0.2rem 0.45rem !important;
+  }
+}
+
+@keyframes avatar-glow {
+  0% {
+    box-shadow: 0 0 4px rgba(145, 94, 255, 0.5);
+    border-color: rgba(145, 94, 255, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 12px rgba(145, 94, 255, 0.8);
+    border-color: rgba(145, 94, 255, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 4px rgba(145, 94, 255, 0.5);
+    border-color: rgba(145, 94, 255, 0.6);
   }
 }
 
 .banner-container {
   background-color: #915eff;
   color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
   font-weight: 600;
+  font-size: 0.75rem;
   font-family: 'General Sans', sans-serif;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   white-space: nowrap;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.2);

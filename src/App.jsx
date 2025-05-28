@@ -1,7 +1,8 @@
 import { BrowserRouter } from "react-router-dom";
 
-import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas, ResumeAvatarCanvas } from "./components";
+import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 import Footer from "./components/Footer";
+import ResumeAvatar from "./components/ResumeAvatar";
 
 const App = () => {
   return (
@@ -11,9 +12,7 @@ const App = () => {
           <Navbar />
           <Hero />
           {/* Add the resume avatar component */}
-          <div className="resume-avatar-container">
-            <ResumeAvatarCanvas />
-          </div>
+          <ResumeAvatar />
         </div>
         <About />
         <Experience />
