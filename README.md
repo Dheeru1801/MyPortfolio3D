@@ -1,7 +1,7 @@
 <div align="center">
   <br />
     
-      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fdiscourse.threejs.org%2Ft%2Fmy-new-personal-portfolio-website%2F72310&psig=AOvVaw15zsCP82UXv0STxbR8r7xs&ust=1748528131889000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMjg-YStxo0DFQAAAAAdAAAAABAL" alt="Project Banner">
+      <img src="https://canada1.discourse-cdn.com/flex035/uploads/threejs/original/3X/e/e/eedecc99d147bf389a399351501214bb5264ad42.jpegL" alt="Project Banner">
   <br />
 
   <div>
