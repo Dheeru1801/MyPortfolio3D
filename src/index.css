@@ -270,13 +270,14 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .resume-avatar-container .avatar-image {
-    width: 50px !important;
-    height: 50px !important;
+    width: 55px !important;
+    height: 55px !important;
   }
   
   .resume-avatar-container .banner-container {
-    font-size: 0.7rem !important;
-    padding: 0.2rem 0.45rem !important;
+    font-size: 0.8rem !important;
+    padding: 0.28rem 0.55rem !important;
+    font-weight: 500 !important;
   }
 }
 
@@ -290,7 +291,7 @@ h1, h2, h3, h4, h5, h6 {
     border-color: rgba(145, 94, 255, 0.9);
   }
   100% {
-    box-shadow: 0 0 4px rgba(145, 94, 255, 0.5);
+    box-shadow: 0 0 8px rgba(145, 94, 255, 0.5);
     border-color: rgba(145, 94, 255, 0.6);
   }
 }
@@ -298,10 +299,10 @@ h1, h2, h3, h4, h5, h6 {
 .banner-container {
   background-color: #915eff;
   color: white;
-  padding: 0.25rem 0.5rem;
-  border-radius: 5px;
-  font-weight: 600;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
   font-family: 'General Sans', sans-serif;
   text-align: center;
   cursor: pointer;

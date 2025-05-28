@@ -12,14 +12,13 @@ const ResumeAvatar = () => {
     <div className="resume-avatar-container">
       <div className="flex flex-col items-center space-y-2">        {/* Avatar Image */}
         <div className="relative">
-          {/* Outer glow ring */}
-          <div 
+          {/* Outer glow ring */}          <div 
             className="absolute"
             style={{ 
-              top: '-4px', 
-              left: '-4px', 
-              right: '-4px', 
-              bottom: '-4px', 
+              top: '-5px', 
+              left: '-5px', 
+              right: '-5px', 
+              bottom: '-5px', 
               borderRadius: '50%',
               border: '2px solid rgba(145, 94, 255, 0.7)',
               boxShadow: '0 0 15px rgba(145, 94, 255, 0.8)',
@@ -37,14 +36,13 @@ const ResumeAvatar = () => {
               animation: 'avatar-glow 2.5s infinite ease-in-out'
             }}
           />
-          
-          <img 
+            <img 
             src={avatar} 
             alt="Avatar" 
             className="avatar-image transition-all duration-300 hover:scale-110 relative z-10"
             style={{ 
-              width: '65px',
-              height: '65px',
+              width: '70px',
+              height: '70px',
               borderRadius: '50%',
               objectFit: 'cover',
               objectPosition: '0 -5px', // Adjust vertical position to show the face better
@@ -54,9 +52,7 @@ const ResumeAvatar = () => {
             }}
             onClick={handleResumeClick}
           />
-        </div>
-          {/* Resume Banner - smaller size */}
-        <div 
+        </div>        {/* Resume Banner - adjusted for better readability */}        <div 
           className="banner-container"
           onClick={handleResumeClick}
           onMouseEnter={() => setHovered(true)}
@@ -64,8 +60,9 @@ const ResumeAvatar = () => {
           style={{
             transform: hovered ? 'scale(1.05)' : 'scale(1)',
             transition: 'transform 0.3s ease',
-            fontSize: '0.75rem',
-            padding: '0.25rem 0.5rem'
+            fontSize: '0.9rem',
+            padding: '0.35rem 0.7rem',
+            letterSpacing: '0.02em'
           }}
         >
           <span>My Resume</span>

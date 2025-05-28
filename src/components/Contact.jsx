@@ -100,11 +100,11 @@ const Contact = () => {
   return (
     <>
       <div
-        className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden max-w-7xl mx-auto`}
+        className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden max-w-[1280px] w-full mx-auto`}
       >
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
-          className='flex-[0.9] bg-black-100 p-8 rounded-2xl'
+          className='flex-[0.8] bg-black-100 p-8 rounded-2xl'
         >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -112,7 +112,7 @@ const Contact = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
+          className='mt-12 flex flex-col gap-8 w-full'
         >
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
