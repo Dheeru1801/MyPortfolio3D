@@ -1,7 +1,7 @@
 <div align="center">
   <br />
-    
-  <img src="./src/assets/newHerobg.webp" alt="Project Banner" width="800px">
+    ![alt text](image.png)
+  <!-- <img src="./src/assets/newHerobg.webp" alt="Project Banner" width="800px"> -->
   <br />
 
   <div>
