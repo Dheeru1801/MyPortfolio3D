@@ -7,7 +7,7 @@ import ResumeAvatar from "./components/ResumeAvatar";
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='relative z-0 bg-primary'>
+      <div className='main-container relative z-0 bg-primary min-h-screen'>
         <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
           <Navbar />
           <Hero />
